@@ -4,9 +4,15 @@
     <title>Brandhub</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <header><img src="./pic/Logo.png" alt="">
-    <div class="wrapper"><img src="./pic/UserPic.png" alt=""><img class="arrow" src="./pic/arrow.png" alt="">
-      <div class="dropdown"><a>аккаунт</a><a>мои заказы</a><a>выйти</a></div>
+  <header>
+    <div class="header_wrapper"><img src="./pic/Logo.png" alt="">
+      <div class="wrapper"><img src="./pic/UserPic.png" alt=""><img class="arrow" src="./pic/arrow.png" alt="">
+        <ul class="dropdown">
+          <li> <a href="#" target="_blank">аккаунт</a></li>
+          <li><a href="#" target="_blank">мои заказы</a></li>
+          <li><a href="#" target="_blank">выйти</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -78,13 +84,26 @@
         <div class="notification">
           <div class="text">
             <p>Ваш Email адрес не подтвержден, пожалуйста проверьте вашу почту.</p><a>Отправить еще раз</a>
-          </div><img src="./pic/cross.png" alt="">
+          </div>
+          <button class="close"><img src="./pic/cross.png" alt=""></button>
         </div>
         <h1>добро пожаловать, с чего начнем?</h1>
-        <div class="card"><img src="./pic/card_logo_1.png" alt="">
-          <h3>Начать проект</h3>
-          <p>Это просто, заполни бриф и отправь на рассмотрение</p>
-          <button class="active">заполнить бриф</button>
+        <div class="cards"> 
+          <div class="card"><img src="./pic/card_logo_1.png" alt="">
+            <h3>Начать проект</h3>
+            <p>Это просто, заполни бриф и отправь на рассмотрение</p>
+            <button class="blue">заполнить бриф</button>
+          </div>
+          <div class="card"><img src="./pic/docs_logo.png" alt="">
+            <h3>дополнительные услуги</h3>
+            <p>возможно они вас заинтересуют</p>
+            <button>посмотреть</button>
+          </div>
+          <div class="card"><img src="./pic/profile_logo.png" alt="">
+            <h3>информация о профиле</h3>
+            <p class="last">добавьте дополнительную инфформацию, подпишитесь на рассылку</p>
+            <button>заполнить</button>
+          </div>
         </div>
       </div>
     </div>
@@ -94,8 +113,13 @@
       <div class="logo"><img src="./pic/Logo.png" alt="">
         <p>&#169; 2020</p>
       </div>
-      <nav><a>сотрудничество</a><a>контакты</a><a>документы</a></nav>
-      <div class="refs"><img src="./pic/facebook.png" alt=""><img src="./pic/instagram.png" alt=""><img src="./pic/telegram.png" alt=""><img src="./pic/youtube.png" alt=""></div>
+      <nav><a href="#" target="_blank">сотрудничество</a><a href="#" target="_blank">контакты</a><a href="#" target="_blank">документы</a></nav>
+      <ul class="refs">
+        <li><a href="#" target="_blank"><img src="./pic/facebook.png" alt=""></a></li>
+        <li><a href="#" target="_blank"><img src="./pic/instagram.png" alt=""></a></li>
+        <li><a href="#" target="_blank"><img src="./pic/telegram.png" alt=""></a></li>
+        <li><a href="#" target="_blank"><img src="./pic/youtube.png" alt=""></a></li>
+      </ul>
     </div>
   </footer>
 </html>

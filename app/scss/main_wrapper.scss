@@ -1,13 +1,16 @@
 main {
-  margin: 0 132px;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
   padding-bottom: 30px;
   .main_wrapper {
-    display: flex
+    display: flex;
+    margin: 0 132px;
   }
   .wrapper {
     width: 100%;
     max-width: 820px;
-    margin-left: 82px;
+    margin-left: 27px;
     .notification {
       display: flex;
       align-items: center;
@@ -34,7 +37,7 @@ main {
       }
     }
     h1 {
-      
+      margin: 38px 0 35px 0;
     }
     ::first-letter {
       text-transform: capitalize;

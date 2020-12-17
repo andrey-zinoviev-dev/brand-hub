@@ -1,9 +1,14 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 1360px;
+  margin: 0 auto;
   padding: 29px 0 24px 0;
-  margin: 0 132px;
+  width: 100%;
+  .header_wrapper {
+    margin: 0 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   img {
     max-width: 162px;
   }
@@ -36,9 +41,13 @@ header {
       &.clicked {
         display: flex;
       }
-      a {
+      li {
         margin: 0 12px;
         padding: 19px 50px 19px 11px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
         text-transform: capitalize;
         cursor: pointer;
       }
