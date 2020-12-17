@@ -1,24 +1,33 @@
-.nav {
+ul {
     list-style: none;
     padding: 0;
     min-width: 251px;
-    .nav-element {
+    li {
         display: flex;
         align-items: center;
         margin-bottom: 48px;
         &.active {
+            .chat {
+                path {
+                    fill: black;
+                }
+            }
             svg path {
                 fill: #1859FF;
+                stroke: #1859FF;
             }
             svg rect {
                 stroke:  #1859FF;
+            }
+
+            :last-of-type {
+                stroke: white;
             }
             a {
                 color: #1859FF;
             }
         }
-        cursor: pointer;
-        .nav-element-link {
+        a {
             font-size: 18px;
             margin-left: 16px;
         }

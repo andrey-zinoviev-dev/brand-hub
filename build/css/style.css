@@ -2,11 +2,11 @@
 header {
   max-width: 1360px;
   margin: 0 auto;
-  padding: 29px 0 24px 0;
+  padding: 32px 0 32px 0;
   width: 100%;
 }
 header .header_wrapper {
-  margin: 0 132px;
+  margin: 0 131px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,13 +19,16 @@ header .wrapper {
   display: flex;
   align-items: center;
 }
-header .wrapper img {
+header .wrapper button {
+  display: flex;
+}
+header .wrapper button img {
   max-width: 48px;
   margin-right: 12px;
+  border-radius: 50%;
 }
-header .wrapper .arrow {
+header .wrapper button .arrow {
   max-width: 14px;
-  cursor: pointer;
 }
 header .wrapper .dropdown {
   display: none;
@@ -56,27 +59,33 @@ header .wrapper .dropdown :not(:last-child) {
   border-bottom: 1px solid #B8B8B8;
 }
 
-.nav {
+ul {
   list-style: none;
   padding: 0;
   min-width: 251px;
 }
-.nav .nav-element {
+ul li {
   display: flex;
   align-items: center;
   margin-bottom: 48px;
-  cursor: pointer;
 }
-.nav .nav-element.active svg path {
+ul li.active .chat path {
+  fill: black;
+}
+ul li.active svg path {
   fill: #1859FF;
-}
-.nav .nav-element.active svg rect {
   stroke: #1859FF;
 }
-.nav .nav-element.active a {
+ul li.active svg rect {
+  stroke: #1859FF;
+}
+ul li.active :last-of-type {
+  stroke: white;
+}
+ul li.active a {
   color: #1859FF;
 }
-.nav .nav-element .nav-element-link {
+ul li a {
   font-size: 18px;
   margin-left: 16px;
 }
@@ -85,11 +94,11 @@ main {
   max-width: 1360px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding: 10px 0 30px 0;
 }
 main .main_wrapper {
   display: flex;
-  margin: 0 132px;
+  margin: 0 131px;
 }
 main .wrapper {
   width: 100%;
@@ -116,6 +125,9 @@ main .wrapper .notification .text p {
 main .wrapper .notification .text a {
   font-weight: 700;
   margin-left: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #de5959;
 }
 main .wrapper .notification img {
   max-width: 14px;
@@ -129,15 +141,16 @@ main .wrapper ::first-letter {
 
 .cards {
   display: flex;
+  justify-content: space-between;
 }
 .cards .card {
+  min-width: 260px;
   max-width: 260px;
   padding: 30px 0 44px 0;
   text-align: center;
   background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
   box-shadow: -14.9774px -14.9774px 24.9624px rgba(255, 255, 255, 0.8), 12.4812px 12.4812px 24.9624px rgba(166, 180, 200, 0.7);
   border-radius: 10px;
-  margin-right: 20px;
 }
 .cards .card img {
   max-width: 150px;
@@ -147,12 +160,15 @@ main .wrapper ::first-letter {
 }
 .cards .card h3 {
   font-size: 20px;
-  margin: 0 0 14px 0;
+  margin: 0 0 6px 0;
+  line-height: 27px;
 }
 .cards .card p {
   margin: 0 38px 47px 38px;
   font-size: 12px;
   line-height: 17px;
+  color: #000000;
+  opacity: 0.6;
 }
 .cards .card .last {
   margin: 0 38px 30px 38px;
@@ -175,6 +191,12 @@ main .wrapper ::first-letter {
 .cards .card button.blue {
   background: linear-gradient(134.17deg, #BBCEFF 4.98%, #1859FF 94.88%);
   color: white;
+}
+.cards :first-of-type h3 {
+  margin: 0 0 14px 0;
+}
+.cards :first-of-type p {
+  margin: 0 38px 66px 38px;
 }
 
 button {
@@ -200,7 +222,7 @@ footer {
   width: 100%;
 }
 footer .wrapper {
-  margin: 0 132px;
+  margin: 0 131px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -208,15 +230,14 @@ footer .wrapper {
 footer .wrapper img {
   max-width: 164px;
 }
-footer .wrapper nav {
-  margin-right: 240px;
+footer .wrapper ul {
+  display: flex;
 }
-footer .wrapper nav a {
-  text-transform: capitalize;
+footer .wrapper ul a {
   text-decoration: none;
   color: black;
 }
-footer .wrapper nav :not(:last-of-type) {
+footer .wrapper ul :not(:last-of-type) {
   margin-right: 24px;
 }
 footer .wrapper .refs {
@@ -240,6 +261,7 @@ body {
   font-weight: normal;
   width: 100%;
   font-family: "Roboto", sans-serif;
+  background: #F8FBFF;
 }
 
 img {
