@@ -1,10 +1,7 @@
 footer {
   padding: 39px 0 29px 0;
-  max-width: 1360px;
-  margin: 0 auto;
   width: 100%;
   .wrapper {
-    margin: 0 131px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -24,11 +21,9 @@ footer {
     .refs {
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       img {
-        max-width: 24px;
-      }
-      :last-of-type {
-        max-width: 30px;
+        max-width: 22px;
       }
       :not(:last-of-type) {
         margin-right: 14px;

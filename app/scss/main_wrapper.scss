@@ -1,15 +1,10 @@
 main {
-  max-width: 1360px;
-  width: 100%;
-  margin: 0 auto;
   padding: 10px 0 30px 0;
   .main_wrapper {
     display: flex;
-    margin: 0 131px;
   }
   .wrapper {
     width: 100%;
-    max-width: 820px;
     margin-left: 27px;
     .notification {
       display: flex;
