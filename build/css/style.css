@@ -87,6 +87,12 @@ ul li.active a {
 }
 ul li a {
   font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+ul li a span {
   margin-left: 16px;
 }
 

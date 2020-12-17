@@ -29,7 +29,13 @@ ul {
         }
         a {
             font-size: 18px;
-            margin-left: 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+            span {
+                margin-left: 16px;
+            }
         }
     }
 }
