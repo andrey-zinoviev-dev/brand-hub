@@ -83,28 +83,57 @@
           </ul>
         </nav>
         <div class="wrapper">
-          <div class="notification">
-            <div class="text">
-              <p>Ваш Email адрес не подтвержден, пожалуйста проверьте вашу почту.</p><a href="#">Отправить еще раз</a>
+          <div class="submitted_cards"> 
+            <div class="card new_padding">
+              <div class="text_wrapper">
+                <h3>Текущий проект</h3>
+                <div class="info">
+                  <p>i</p>
+                </div>
+              </div>
+              <div class="hovered_block">
+                <p>тут будут отражены все обновления по текущему проекту: Заказ № {{Номер}}</p>
+              </div>
+              <div class="element submitted"> 
+                <h4>Бриф заполнен <br> и отправлен</h4><span>1 мая, 12:08</span>
+                <p>Спасибо, что отправили бриф, он направлен на проверку, после того..<a href="#">Читать полностью></a></p>
+              </div>
+              <div class="element submitted">
+                <h4>Составлен перечень <br> документов на подписание</h4><span>2 мая, 12:08</span>
+                <p>Составлен перечень документов на подписание {{Наименование доку...}}<a href="#">Читать полностью</a></p>
+              </div>
+              <div class="element submitted no_underscore">
+                <h4>Документы в процессе <br> утверждения</h4><span>3 мая, 12:08</span>
+                <p>Документы в процессе утверждения. <br> Ожидайте около дня</p>
+              </div>
+              <button>К проекту</button>
             </div>
-            <button class="close"><img src="./pic/cross.png" alt=""></button>
-          </div>
-          <h1>добро пожаловать, с чего начнем?</h1>
-          <div class="cards"> 
-            <div class="card"><img src="./pic/card_logo_1.svg" alt="">
-              <h3>Начать проект</h3>
-              <p>Это просто, заполни бриф <br> и отправь на рассмотрение</p>
-              <button class="blue">заполнить бриф</button>
+            <div class="card new_padding docs">
+              <div class="text_wrapper">
+                <h3>Документы</h3>
+                <div class="info">
+                  <p>i</p>
+                </div>
+              </div>
+              <div class="hovered_block">
+                <p>тут будут отражены все обновления <br> по текущему проекту: Заказ № {{Номер}}</p>
+              </div>
+              <div class="element doc">
+                <div class="wrapper"><img src="./pic/Icon.png" alt="">
+                  <p>Наименование <br> документа длинное</p>
+                </div><span>2 мая, 12:08</span>
+              </div>
+              <div class="element doc">
+                <div class="wrapper"><img src="./pic/Icon.png" alt="">
+                  <p>Наименование <br> документа длинное</p>
+                </div><span>2 мая, 12:08</span>
+              </div>
+              <button>Все документы</button>
             </div>
-            <div class="card"><img src="./pic/card_logo_2.svg" alt="">
-              <h3>дополнительные <br> услуги</h3>
-              <p>возможно они вас заинтересуют</p>
-              <button>посмотреть</button>
-            </div>
-            <div class="card"><img src="./pic/card_logo_3.svg" alt="">
-              <h3>информация <br> о профиле</h3>
-              <p class="last">добавьте дополнительную информацию, подпишитесь на рассылку</p>
-              <button>заполнить</button>
+            <div class="card new_padding"><img src="./pic/docs_logo.png" alt="">
+              <h3>Дополнительные <br> услуги</h3>
+              <p class="last">Возможно они вас заинтересуют</p>
+              <button>Посмотреть</button>
             </div>
           </div>
         </div>
