@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <title>Brandhub</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <div class="container">
     <header>
-      <div class="header_wrapper"><a href="index.html"><img src="./pic/Logo.png" alt=""></a>
+      <div class="header_wrapper"><a href="index.html"><img src="./pic/Logo.png" alt=""/></a>
         <div class="wrapper">
-          <button><img src="./pic/user_pic_rectang.png" alt=""><img class="arrow" src="./pic/arrow.svg" alt=""></button>
+          <button><img src="./pic/user_pic_rectang.png" alt=""/><img class="arrow" src="./pic/arrow.svg" alt=""/></button>
           <ul class="dropdown">
             <li> <a href="#" target="_blank">аккаунт</a></li>
             <li><a href="#" target="_blank">мои заказы</a></li>
@@ -82,29 +82,119 @@
                 </svg><span>Профиль</span></a></li>
           </ul>
         </nav>
-        <div class="wrapper">
-          <div class="notification">
-            <div class="text">
-              <p>Ваш Email адрес не подтвержден, пожалуйста проверьте вашу почту.</p><a href="#">Отправить еще раз</a>
-            </div>
-            <button class="close"><img src="./pic/cross.png" alt=""></button>
+        <div class="wrapper wrapper_projects">
+          <div class="route"><span>Проекты</span><img src="./pic/arrow_right.svg" alt=""/><span>Проект # 000001</span></div>
+          <h2>Проект № 000001</h2>
+          <div class="stages">
+            <button class="stage clicked">Текущий этап</button>
+            <button class="stage">Бриф</button>
+            <button class="stage">Выбранные услуги</button>
+            <button class="stage">Документы</button>
+            <button class="stage">Результат работ</button>
           </div>
-          <h1>добро пожаловать, с чего начнем?</h1>
-          <div class="cards"> 
-            <div class="card"><img src="./pic/card_logo_1.svg" alt="">
-              <h3>Начать проект</h3>
-              <p>Это просто, заполни бриф <br> и отправь на рассмотрение</p>
-              <button class="blue">заполнить бриф</button>
+          <div class="payment">
+            <div class="payment_wrapper"><span>Стоимость услуг: 110 000 руб.</span>
+              <p>Сформирована окончательная стоимость заказа</p>
+              <button class="blue">Оплата</button>
             </div>
-            <div class="card"><img src="./pic/card_logo_2.svg" alt="">
-              <h3>дополнительные <br> услуги</h3>
-              <p>возможно они вас заинтересуют</p>
-              <button>посмотреть</button>
+            <div class="progress_bar"><span>0% оплачено</span>
+              <div class="progress">
+                <div class="filler"></div>
+              </div>
             </div>
-            <div class="card"><img src="./pic/card_logo_3.svg" alt="">
-              <h3>информация <br> о профиле</h3>
-              <p class="last">добавьте дополнительную информацию, подпишитесь на рассылку</p>
-              <button>заполнить</button>
+          </div>
+          <div class="block approved">
+            <div class="info">
+              <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 1. Заполнение брифа</span></div>
+              <div class="status approved">
+                <p>Текущий статус</p><span>Бриф утвержден</span>
+              </div>
+              <div class="refresh_date">
+                <div class="wrapper">
+                  <p>Последнее обновление</p><span>3 мая 2020</span>
+                </div>
+                <div class="svg_background"><img src="./pic/tick.svg" alt=""/></div>
+              </div>
+            </div>
+            <div class="chat">
+              <div class="message"> 
+                <p>Пожалуйста, заполните бриф</p>
+              </div>
+            </div>
+            <div class="buttons"><a href="../../build/project_unsubmitted_brief.html">
+                <button class="blue">Заполнить бриф</button></a>
+              <button>Задать вопрос</button>
+            </div>
+          </div>
+          <div class="block approved">
+            <div class="info">
+              <div class="stage_toggle"> <img src="./pic/arrow.svg" alt=""/><span>Этап 2. Выбор услуг</span></div>
+              <div class="status approved">
+                <p>Текущий статус</p><span>Услуги на согласовании</span>
+              </div>
+              <div class="refresh_date">
+                <div class="wrapper">
+                  <p>Последнее обновление</p><span>3 мая 2020</span>
+                </div>
+                <div class="svg_background"><img src="./pic/tick.svg" alt=""/></div>
+              </div>
+            </div>
+            <div class="chat">
+              <div class="message">
+                <p>Бриф был согласован. Предлагаем вам следующий перечень услуг в связи с задачей. Вы можете добавить их к проекту и отправить на согласование.</p>
+              </div>
+              <div class="message client">
+                <div class="message_wrapper">
+                  <p>Выбраны следующие услуги:</p>
+                  <p class="service">Новый бренд: 100 000 руб</p>
+                  <p class="service">Дескриптор: 10 000 руб</p>
+                  <p class="service">Слоган: 15 000 руб</p>
+                  <p class="service">Итог: 110 000 руб</p>
+                </div>
+              </div>
+              <div class="message">
+                <p>Выбранные услуги на согласовании, ожидайте.</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <button>Задать вопрос</button>
+            </div>
+          </div>
+          <div class="block active">
+            <div class="info"> 
+              <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 3. Формирование проектной документации</span></div>
+              <div class="status">
+                <p>Текущий статус</p><span>Документы не загружены</span>
+              </div>
+              <div class="refresh_date">
+                <div class="wrapper">
+                  <p>Последнее обновление</p><span>4 мая 2020</span>
+                </div>
+                <div class="svg_background"><img src="./pic/tick.svg" alt=""/></div>
+              </div>
+            </div>
+            <div class="chat">
+              <div class="message">
+                <p>Документы на согласовании. Ожидайте около дня</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <button>Задать вопрос</button>
+            </div>
+          </div>
+          <div class="block">
+            <div class="info">
+              <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 4. Выполнение проекта</span></div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="info">
+              <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 5. Результаты работ</span></div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="info">
+              <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 6. Закрытие проекта</span></div>
             </div>
           </div>
         </div>
@@ -112,7 +202,7 @@
     </main>
     <footer>
       <div class="wrapper">
-        <div class="logo"><a href="index.html"><img src="./pic/Logo.png" alt=""></a>
+        <div class="logo"><a href="index.html"><img src="./pic/Logo.png" alt=""/></a>
           <p>&#169; 2020</p>
         </div>
         <ul>
@@ -121,10 +211,10 @@
           <li><a href="#">Документы</a></li>
         </ul>
         <ul class="refs">
-          <li><a href="#" target="_blank"><img src="./pic/facebook.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="./pic/instagram.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="./pic/telegram.png" alt=""></a></li>
-          <li><a href="#" target="_blank"><img src="./pic/youtube.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="./pic/facebook.png" alt=""/></a></li>
+          <li><a href="#" target="_blank"><img src="./pic/instagram.png" alt=""/></a></li>
+          <li><a href="#" target="_blank"><img src="./pic/telegram.png" alt=""/></a></li>
+          <li><a href="#" target="_blank"><img src="./pic/youtube.png" alt=""/></a></li>
         </ul>
       </div>
     </footer>
