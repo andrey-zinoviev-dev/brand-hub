@@ -1,5 +1,8 @@
 main {
   .wrapper_projects {
+    &.results {
+      max-width: 727px;
+    }
     .route {
       margin-bottom: 30px;
       span {
@@ -18,6 +21,9 @@ main {
       margin-bottom: 58px;
       font-size: 30px;
       line-height: 125%;
+      &.heading_bill {
+        margin: 0 0 40px 0;
+      }
     }
     .stages {
       display: flex;
@@ -32,50 +38,13 @@ main {
         background: rgba(0, 0, 0, 0);
         box-shadow: none;
         padding: 0 0 15px 0;
+        a {
+          text-decoration: none;
+          color:black;
+        }
         &.clicked {
           color: black;
           border-bottom: 3px solid #1859FF;
-        }
-      }
-    }
-    .payment {
-      display: flex;
-      justify-content: space-between;
-      border: 1px solid #E4E4E4;
-      box-sizing: border-box;
-      border-radius: 10px;
-      align-items: center;
-      padding: 18px 24px 18px 20px;
-      margin-bottom: 40px;
-      .payment_wrapper {
-        p {
-          margin: 4px 0 0 0;
-        }
-        button {
-          min-width: 214px;
-          margin-top: 18px;
-        }
-      }
-      .progress_bar {
-        min-width: 332px;
-        span {
-          font-size: 12px;
-          line-height: 140%;
-        }
-        .progress {
-          position: relative;
-          background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
-          box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(172, 175, 181, 0.55);
-          border-radius: 40px;
-          height: 21px;
-          margin-top: 5px;
-          .filler {
-            width: calc(1*0%);
-            height: 100%;
-            background: linear-gradient(108.3deg, #5A88FF 23.49%, #5081FF 76.7%);
-            box-shadow: inset 5px -4px 10px #4276FB;
-            border-radius: 40px;    
-          }
         }
       }
     }
@@ -359,5 +328,46 @@ main {
         display: none;
       }
     } 
+  }
+  .payment {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+    padding: 18px 24px 18px 20px;
+    margin-bottom: 40px;
+    .payment_wrapper {
+      p {
+        margin: 4px 0 0 0;
+      }
+      button {
+        min-width: 214px;
+        margin-top: 18px;
+      }
+    }
+    .progress_bar {
+      min-width: 332px;
+      span {
+        font-size: 12px;
+        line-height: 140%;
+      }
+      .progress {
+        position: relative;
+        background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+        box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(172, 175, 181, 0.55);
+        border-radius: 40px;
+        height: 21px;
+        margin-top: 5px;
+        .filler {
+          width: calc(1*0%);
+          height: 100%;
+          background: linear-gradient(108.3deg, #5A88FF 23.49%, #5081FF 76.7%);
+          box-shadow: inset 5px -4px 10px #4276FB;
+          border-radius: 40px;    
+        }
+      }
+    }
   }
 }

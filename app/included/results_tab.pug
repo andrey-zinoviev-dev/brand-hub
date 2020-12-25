@@ -1,0 +1,81 @@
+main
+  .main_wrapper
+    include ./main_dashboard.pug
+    .wrapper.wrapper_projects.results_tab
+      .route
+        span Проекты
+        img(src="./pic/arrow_right.svg", alt="")
+        span Проект # 000001
+        img(src="./pic/arrow_right.svg", alt="")
+        span Результаты работ
+      h2 Проект № 000001
+      .stages
+        button.stage Текущий этап
+        button.stage Бриф
+        button.stage 
+          a(href="../../build/project_services_tab.html") Выбранные услуги
+        button.stage Документы
+        button.stage.clicked Результат работ
+      h3 Рабочие файлы
+      .docs
+        .text
+          span Наименование
+          span Получен
+          span.margin_left Статус
+          span Скачать
+        .doc.first_curved
+          .wrapper
+            .radio
+              span.anchor Презентация 1 (pdf)
+            span 05.05.2020 12:08
+          span.confirmed Согласован
+          button
+            img(src="./pic/download.svg", alt="")
+        .doc
+          .wrapper
+            .radio
+              span.anchor Презентация 2 (pdf)
+            span 05.05.2020 12:08
+          span.confirmed Согласован
+          button
+            img(src="./pic/download.svg", alt="")
+        .doc
+          .wrapper
+            .radio
+              span.anchor Презентация 3 (pdf)
+            span 05.05.2020 12:08
+          span.confirmed Согласован
+          button
+            img(src="./pic/download.svg", alt="")
+        .doc
+          .wrapper
+            .radio
+              span.anchor Логотип (pdf)
+            span 05.05.2020 12:08
+          span.confirmed Согласован
+          button
+            img(src="./pic/download.svg", alt="")
+        .doc
+          .wrapper
+            .radio
+              span.anchor Текстовый документ (pdf)
+            span 05.05.2020 12:08
+          span.confirmed Согласован
+          button
+            img(src="./pic/download.svg", alt="")
+      .bottom
+        h3 Исходные файлы
+        .docs
+          .text
+            .wrap
+              span Наименование
+              span Получен
+            span Скачать
+          .doc.solo_curved
+            .wrapper
+              .radio
+                span.anchor Текстовый документ (pdf)
+              span 05.05.2020 12:08
+            button
+              img(src="./pic/download.svg", alt="")
+          button.blue.hidden Вернуться к актам

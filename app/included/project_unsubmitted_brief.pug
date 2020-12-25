@@ -9,10 +9,13 @@ main
       h2 Проект № 000001
       .stages
         button.stage.clicked Текущий этап
-        button.stage Бриф
-        button.stage Выбранные услуги
+        button.stage
+          a(href="../../build/brief_tab.html") Бриф
+        button.stage
+          a(href="../../build/project_services_tab.html") Выбранные услуги
         button.stage Документы
-        button.stage Результат работ
+        button.stage
+          a(href="../../build/results_tab.html") Результат работ
       .block.active
         .info
           .stage_toggle
@@ -33,13 +36,13 @@ main
           .message.client  
             p Мне понравилось вот что
             .doc
-              img(src="./pic/doc_logo.svg", alt="")
+              img(src="./pic/doc.svg", alt="")
               p Примеры работ
-            a(href="#") Все загруженные файлы>
+            a(href="../../build/docs_of_project.html") Все загруженные документы>
           .message
             p В текущем виде бриф не согласован. Заполните корректно данные для ЦА нажав “Редактировать бриф”
         .buttons
-          a(href="../build/project_approved_brief.html")
+          a(href="../build/project_results.html")
             button.blue Редактировать бриф
           button Задать вопрос
       .block

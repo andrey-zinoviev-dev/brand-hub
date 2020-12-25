@@ -9,10 +9,13 @@ main
       h2 Проект № 000001
       .stages
         button.stage.clicked Текущий этап
-        button.stage Бриф
-        button.stage Выбранные услуги
+        button.stage
+          a(href="../../build/brief_tab.html") Бриф
+        button.stage 
+          a(href="../../build/project_services_tab.html") Выбранные услуги
         button.stage Документы
-        button.stage Результат работ
+        button.stage
+          a(href="../../build/results_tab.html") Результат работ
       .block.active
         .info
           .stage_toggle
