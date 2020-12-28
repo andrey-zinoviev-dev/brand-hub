@@ -24,6 +24,9 @@ main {
       &.heading_bill {
         margin: 0 0 40px 0;
       }
+      &.chats_page {
+        margin-bottom: 30px;
+      }
     }
     .stages {
       display: flex;
@@ -46,6 +49,9 @@ main {
           color: black;
           border-bottom: 3px solid #1859FF;
         }
+      }
+      &.profile {
+        max-width: 469px;
       }
     }
     .block {
@@ -136,6 +142,23 @@ main {
         font-size: 16px;
         line-height: 140%;
         color: #959595;
+      }
+      &.chat_page {
+        .message {
+          background: linear-gradient(134.17deg, #F9F9FB 4.98%, #FFFFFF 94.88%);
+          box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+        }
+      }
+      &.chat_page {
+        .info {
+          padding: 15px 0;
+          .stage_toggle {
+            span {
+              color: #3C3C3B;
+              font-weight: 500;
+            }
+          }
+        }
       }
     }
     .active {
@@ -294,6 +317,34 @@ main {
         margin: 0;
         &:first-of-type {
           margin-right: 30px;
+        }
+      }
+      &.chat_page {
+        .info {
+          padding: 30px 0 30px 20px;
+          background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
+          border-bottom: 1px solid rgba(163, 189, 255, 0.55);
+        }
+        .chat {
+          max-height: 339px;
+          padding: 25px 25px 33px 20px;
+          .client {
+            background: linear-gradient(134.17deg, #F9F9FB 4.98%, #FFFFFF 94.88%);
+            box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
+            padding: 19px 30px 14px 30px;
+            .doc {
+              padding: 18px 0;
+              border-top: 1px solid rgba(149, 149, 149, 0.5);
+              border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+            }
+          }
+        }
+        .buttons {
+          justify-content: center;
+          a {
+            text-decoration: none;
+            color: #1859FF;
+          }
         }
       }
     }

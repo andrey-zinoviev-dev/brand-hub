@@ -60,6 +60,24 @@
         font-weight: 700;
         font-size: 24px;
       }
+      .image_wrapper {
+        .wrapper {
+          align-items: center;
+          margin-bottom: 15px;
+          span {
+            margin-right: 20px;
+            margin-left: 13px;
+          }
+          .close {
+            padding: 0;
+          }
+        }
+        button {
+          padding: 10px 30px;
+          font-size: 12px;
+          margin: 0;
+        }
+      }
     }
     ul {
       li {
@@ -69,6 +87,36 @@
         font-size: 18px;
         color: #3C3C3B;
       }
+      &.new_services {
+        li {
+          max-width: 815px;
+          align-items: flex-start;
+          margin-top: 30px;
+          .image_wrapper {
+            .wrapper {
+              align-items: center;
+              justify-content: flex-end;
+              span {
+                margin-right: 20px;
+                font-size: 24px;
+                line-height: 110%;
+                font-weight: 700;
+              }
+              .close {
+                margin: 0;
+                padding: 0;
+              }
+            }
+            button {
+              margin: 15px 0 0 0;
+              padding: 10px 29px;
+            }
+          }
+        } 
+      }
+    }
+    &.new_invoice {
+      padding:0 0 30px 0;
     }
   }
   &:last-of-type {
@@ -84,6 +132,9 @@
         max-width: 245px;
         width: 100%;
         color: #3C3C3B;
+        &.blue {
+          color: white;
+        }
       }
     }
     .nested_services {
@@ -145,6 +196,19 @@
         margin-right: 10px;
       }
     }
+    &.services_catalogue {
+      .buttons {
+        button {
+          &:first-of-type {
+            padding: 19px 39px;
+          }
+          &:last-of-type {
+            margin-right: 0;
+            min-width: 168px;
+          }
+        }
+      }
+    }
   }
   .action {
     padding: 40px 0 0 0;
@@ -178,6 +242,40 @@
         font-size: 40px;
         line-height: 125%;
         font-weight: 700;
+      }
+    }
+    &.invoice {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .buttons {
+        button {
+          margin: 0;
+          min-width: 214px;
+        }
+      }
+      .text {
+        min-width: 282px;
+        .text_block {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 18px;
+            line-height: 135%;
+            &:last-of-type {
+              margin-right: 35px;
+              font-size: 24px;
+              line-height: 110%;
+            }
+          }
+          &:last-of-type {
+            span {
+              font-size: 40px;
+              line-height: 125%;
+              font-weight: 700;
+            }
+          }
+        }
       }
     }
   }

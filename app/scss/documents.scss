@@ -1,0 +1,38 @@
+.wrapper_projects {
+  .wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &.align_left {
+      justify-content: flex-start;
+    }
+    &.no_results {
+      text-align: center;
+      padding: 182px 0 291px 0;
+      display: block;
+    }
+    &.hidden {
+      display: none;
+    }
+    button {
+      margin: 0;
+    }
+  }
+}
+.folder {
+  position: relative;
+  span {
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    font-weight: 500;
+    max-width: 210px;
+  }
+}
+.padding {
+  padding: 50px 0;
+}
+.border {
+  border-bottom: 1px solid rgba(149, 149, 149, 0.5);
+}
