@@ -1620,6 +1620,95 @@ p {
 .brief_block.company .margin_bottom .big_width {
   max-width: 291px;
 }
+.brief_block.company .margin_bottom span {
+  font-size: 16px;
+}
+.brief_block.company input {
+  min-width: 304px;
+  min-height: 59px;
+  background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(193, 199, 207, 0.55);
+  border-radius: 10px;
+  padding: 18px 31px 18px 15px;
+}
+.brief_block.company .large {
+  min-width: 653px;
+}
+.brief_block.company .medium {
+  min-width: 433px;
+}
+.brief_block.company .buttons {
+  justify-content: center;
+}
+.brief_block.company .tiny {
+  min-width: 280px;
+}
+.brief_block.review {
+  padding: 60px 100px;
+}
+.brief_block.review h2 {
+  font-size: 24px;
+  line-break: 26.4px;
+  margin-bottom: 30px;
+}
+.brief_block.review form {
+  margin: 0;
+}
+.brief_block.review .margin_bottom {
+  margin: 0 0 61px 0;
+}
+.brief_block.review .account_input span {
+  font-size: 16px;
+  line-height: 140%;
+}
+.brief_block.review .editable_zone {
+  width: 100%;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.brief_block.review .editable_zone span {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+.brief_block.review .review_zone {
+  background: linear-gradient(134.17deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 7px rgba(193, 199, 207, 0.55);
+  border-radius: 10px;
+  min-height: 200px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.brief_block.review .review_file {
+  width: 100%;
+  justify-content: space-between;
+  padding: 11px 20px 11px 20px;
+  box-sizing: border-box;
+  align-self: center;
+  border-top: 1px solid rgba(149, 149, 149, 0.5);
+}
+.brief_block.review .review_file .wrapper {
+  align-items: center;
+  max-width: 280px;
+  justify-content: flex-start;
+}
+.brief_block.review .review_file .wrapper img {
+  margin-right: 15px;
+}
+.brief_block.review .buttons {
+  margin: 60px 0 0 0;
+  justify-content: space-between;
+}
+.brief_block.review .buttons button {
+  margin: 0;
+}
+.brief_block.review button {
+  display: flex;
+  justify-content: center;
+}
+.brief_block.review button img {
+  margin-right: 12px;
+}
 
 .round {
   width: 23px;
@@ -1650,6 +1739,30 @@ p {
 }
 .wrapper_projects .wrapper button {
   margin: 0;
+}
+.wrapper_projects .wrapper.finalize {
+  padding: 70px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper_projects .wrapper.finalize h2 {
+  margin-bottom: 20px;
+}
+.wrapper_projects .wrapper.finalize span {
+  margin-bottom: 20px;
+}
+.wrapper_projects .wrapper.finalize .large_margin {
+  margin-bottom: 116px;
+}
+.wrapper_projects .wrapper.finalize .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper_projects .wrapper.finalize .buttons button {
+  padding: 16px 37px;
+  min-width: 214px;
 }
 
 .folder {
@@ -1935,6 +2048,7 @@ p {
 .account_input {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 36px 0 60px 0;
 }
 .account_input .span_column {
@@ -1952,6 +2066,12 @@ p {
 }
 .account_input.no_bottom_margin button {
   padding: 22px 38px;
+}
+.account_input.no_margin {
+  margin: 0;
+}
+.account_input.no_margin button {
+  padding: 19px 57px;
 }
 
 .radio_wrapper {

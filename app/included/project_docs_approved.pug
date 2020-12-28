@@ -208,7 +208,7 @@ main
           .message
             p Вам доступны результаты выполненых работ. Также необходимо подписать акты выполненых работ.
             a(href="#") Перейти к документам>
-      .block.approved
+      .block.active
         .info
           .stage_toggle
             img(src="./pic/arrow.svg", alt="")
@@ -229,5 +229,8 @@ main
           .message.client
             p.no_margin Подписал документы вручную
         .buttons
-          button.blue Оставить отзыв
+          a(href="../../build/close_project.html")
+            button.blue Завершить проект
+          a(href="../../build/review.html")
+            button.blue Оставить отзыв
           button Задать вопрос

@@ -8,10 +8,10 @@ main
         span Проект № 000001
       h2.chats_page Проект № 000001
       p Тут хранится переписка по всем проектам, чтобы <br> найти сообщения воспользуйтесь поиском.
-      .search
+      form.search
         input(type="text", name="keyword", placeholder="Искать сообщение")
         a(href="../../build/chat_search.html")
-          button.blue
+          button.blue(type="submit")
             img(src="./pic/search.svg", alt="")
         img.absolute_position(src="./pic/search_grey.svg", alt="")
       .block.chat_page

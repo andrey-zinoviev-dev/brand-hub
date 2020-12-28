@@ -84,23 +84,48 @@
             </ul>
           </nav>
           <div class="wrapper wrapper_projects">
-            <div class="route"><span>Профиль</span><img src="./pic/arrow_right.svg" alt=""/><span>ООО "Рога и копыта"</span></div>
-            <h2 class="docs_project">Профиль</h2>
-            <div class="brief_block company"> 
-              <h3>ООО "Рога и копыта"</h3>
-              <div class="wrapper margin_bottom"><span>Юридический адрес</span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis. Eget aliquet lorem enim donec sagittis, a aliquet nisi mattis</span></div>
-              <div class="wrapper margin_bottom"><span><b>Дополнительная информация</b></span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis. Eget aliquet lorem enim donec sagittis, a aliquet nisi mattis</span></div>
-              <div class="wrapper margin_bottom"><span><b>ИНН</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>КПП</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>ОГРН</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>ОКТМО</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>ОКВЭД</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>Банк</b></span><span>ОАО "БАНК"</span></div>
-              <div class="wrapper margin_bottom"><span><b>Расчетный счет (Р/C)</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span class="big_width"><b>Корреспондентский счет (К/С)</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>БИК</b></span><span>1312313213131</span></div>
-              <div class="buttons"><a href="../../build/profile_company_edit.html">
-                  <button class="blue">Редактировать</button></a></div>
+            <div class="route"><span>Проекты</span><img src="./pic/arrow_right.svg" alt=""/><span>Проект № 000001</span><img src="./pic/arrow_right.svg" alt=""/><span>Оставить отзыв</span></div>
+            <div class="brief_block company review">
+              <h2 class="docs_project">Оставьте нам отзыв</h2>
+              <form action="/">
+                <div class="wrapper">
+                  <div class="account_input margin_bottom">
+                    <div class="span_column"><span>Ваше имя</span>
+                      <input class="tiny" type="text" autocomplete="off" value="Алексей"/>
+                    </div>
+                  </div>
+                  <div class="account_input margin_bottom">
+                    <div class="span_column"><span>Ваша фамилия</span>
+                      <input class="tiny" type="text" autocomplete="off" value="Алехин"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="account_input no_margin">
+                    <div class="span_column"><span>Ваша должность</span>
+                      <input class="tiny" type="text" autocomplete="off" value="Менеджер"/>
+                    </div>
+                  </div>
+                  <div class="account_input no_margin">
+                    <div class="span_column"><span>Ваш телефон (необязательное поле)</span>
+                      <input class="tiny" type="text" autocomplete="off" value="89993211232"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper editable_zone"><span>Отзыв</span>
+                  <div class="review_zone" contenteditable="true">
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim...</p>
+                  </div>
+                  <div class="file review_file">
+                    <div class="wrapper"><img src="./pic/doc.svg" alt="документ"/><span>Письменная благодарность.pdf</span></div>
+                    <button><img src="./pic/delete_icon.svg" alt=""/></button>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <button> <img src="./pic/upload.svg" alt=""/><span>Прикрепить файл</span></button>
+                  <button class="blue">Отправить</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

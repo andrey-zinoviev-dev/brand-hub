@@ -84,23 +84,154 @@
             </ul>
           </nav>
           <div class="wrapper wrapper_projects">
-            <div class="route"><span>Профиль</span><img src="./pic/arrow_right.svg" alt=""/><span>ООО "Рога и копыта"</span></div>
-            <h2 class="docs_project">Профиль</h2>
-            <div class="brief_block company"> 
-              <h3>ООО "Рога и копыта"</h3>
-              <div class="wrapper margin_bottom"><span>Юридический адрес</span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis. Eget aliquet lorem enim donec sagittis, a aliquet nisi mattis</span></div>
-              <div class="wrapper margin_bottom"><span><b>Дополнительная информация</b></span><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta viverra viverra velit facilisis. Eget aliquet lorem enim donec sagittis, a aliquet nisi mattis</span></div>
-              <div class="wrapper margin_bottom"><span><b>ИНН</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>КПП</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>ОГРН</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>ОКТМО</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>ОКВЭД</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>Банк</b></span><span>ОАО "БАНК"</span></div>
-              <div class="wrapper margin_bottom"><span><b>Расчетный счет (Р/C)</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span class="big_width"><b>Корреспондентский счет (К/С)</b></span><span>1312313213131</span></div>
-              <div class="wrapper margin_bottom"><span><b>БИК</b></span><span>1312313213131</span></div>
-              <div class="buttons"><a href="../../build/profile_company_edit.html">
-                  <button class="blue">Редактировать</button></a></div>
+            <div class="route"><span>Чаты</span><img src="./pic/arrow_right.svg" alt=""/><span>Проект № 000001</span></div>
+            <h2 class="chats_page">Проект № 000001</h2>
+            <p>Тут хранится переписка по всем проектам, чтобы <br> найти сообщения воспользуйтесь поиском.</p>
+            <form class="search">
+              <input type="text" name="keyword" placeholder="Искать сообщение"/><a href="../../build/chat_search.html">
+                <button class="blue" type="submit"><img src="./pic/search.svg" alt=""/></button></a><img class="absolute_position" src="./pic/search_grey.svg" alt=""/>
+            </form>
+            <div class="block chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 1. Заполнение брифа</span></div>
+              </div>
+              <div class="chat brief_sent">
+                <div class="message"> 
+                  <p>Спасибо что отправили бриф, он отправлен на проверку, после того как он будет согласован и утвержден мы {{следующее действие}}.</p>
+                </div>
+                <div class="message client"> 
+                  <p>Мне понравилось вот что</p>
+                  <div class="doc"><img src="./pic/doc.svg" alt=""/>
+                    <p>Примеры работ</p>
+                  </div><a href="../../build/docs_of_project.html">Все загруженные документы></a>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block chat_page">
+              <div class="info">
+                <div class="stage_toggle"> <img src="./pic/arrow.svg" alt=""/><span>Этап 2. Выбор услуг</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block chat_page">
+              <div class="info"> 
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 3. Формирование проектной документации</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Последнее сообщение от модератора</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block nested chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 4. Выполнение проекта</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block stage_nested chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 4.1 Стратегия бренда</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block stage_nested chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 4.2 Нейминг</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block stage_nested chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 4.3 Дизайн часть</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block stage_nested chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 4.4 Носители бренда</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons">
+                <button>Задать вопрос</button>
+              </div>
+            </div>
+            <div class="block chat_page">
+              <div class="info"> 
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 5. Результаты работ</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
+            </div>
+            <div class="block chat_page">
+              <div class="info">
+                <div class="stage_toggle"><img src="./pic/arrow.svg" alt=""/><span>Этап 6. Закрытие проекта</span></div>
+              </div>
+              <div class="chat">
+                <div class="message">
+                  <p>Тут будут отображены последние два/одно сообщение от модератора и клиента. Можно будет развернуть, чтобы прочитать всю пеерписку.</p>
+                </div>
+                <div class="message client">
+                  <p>Сообщение от клиента</p>
+                </div>
+              </div>
+              <div class="buttons"></div>
             </div>
           </div>
         </div>

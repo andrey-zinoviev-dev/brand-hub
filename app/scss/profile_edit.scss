@@ -162,6 +162,7 @@
 .account_input {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 36px 0 60px 0;
   .span_column {
     display: flex;
@@ -177,6 +178,12 @@
     margin: 36px 0 0 0;
     button {
       padding: 22px 38px;
+    }
+  }
+  &.no_margin {
+    margin: 0;
+    button {
+      padding: 19px 57px;
     }
   }
 }
