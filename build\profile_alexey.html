@@ -83,20 +83,96 @@
                   </svg><span>Профиль</span></a></li>
             </ul>
           </nav>
-          <div class="wrapper wrapper_projects">
-            <div class="route"><span>Проекты</span><img src="./pic/arrow_right.svg" alt=""/><span>Проект # 000001</span><img src="./pic/arrow_right.svg" alt=""/><span>Документы</span></div>
-            <h2 class="docs_project">Проект № 000001</h2>
-            <div class="stages">
-              <button class="stage">Текущий этап</button><a href="../../build/brief_tag.html">Бриф
-                <button class="stage"></button></a>
-              <button class="stage"> </button>
-              <button class="stage clicked">Документы</button><a href="../../build/results_tab.html"> Результат работ
-                <button class="stage"></button></a>
+          <div class="wrapper wrapper_projects profile_wrapper">
+            <h2 class="docs_project">Профиль</h2>
+            <div class="stages profile">
+              <button class="stage clicked">Редактировать профиль</button>
+              <button class="stage"><a href="#">Информация о компании</a></button>
             </div>
-            <div class="wrapper">
-              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Бриф</span></div>
-              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Проектная документация</span></div>
-              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Результаты работ</span></div>
+            <div class="profile_info">
+              <h3>Информация профиля</h3>
+              <div class="profile_wrapper">
+                <div class="image_wrapper">
+                  <div class="pic"><img src="./pic/profile_logo.svg" alt=""/></div>
+                  <button>Загрузить</button>
+                </div>
+                <div class="text_zone">
+                  <div class="text"><span>Ваше имя</span>
+                    <input type="text" name="name" autocomplete="off" value="Алексей"/>
+                  </div>
+                  <div class="text"><span>Ваша фамилия</span>
+                    <input type="text" name="surname" autocomplete="off" value="Алехин"/>
+                  </div>
+                </div>
+              </div>
+              <button class="blue">Подтвердить и сохранить</button>
+            </div>
+            <div class="profile_info large_padding">
+              <h3>Информация для входа в аккаунт</h3>
+              <div class="notification">
+                <div class="text">
+                  <p>Ваш Email адрес не подтвержден, пожалуйста проверьте вашу почту.</p><a href="#">Отправить еще раз</a>
+                </div>
+                <button class="close"><img src="./pic/cross.png" alt=""/></button>
+              </div>
+              <div class="input_wrapper">
+                <div class="account_input">
+                  <div class="span_column"><span>Текущий email</span>
+                    <input type="text" autocomplete="off" value="sample@mail.ru"/>
+                  </div>
+                  <button class="blue">Изменить email</button>
+                </div>
+              </div>
+              <div class="input_wrapper">
+                <div class="account_input">
+                  <div class="span_column"><span>Номер телефона</span>
+                    <input type="text" autocomplete="off" value="+7 123 333 44 55"/>
+                  </div>
+                  <button class="blue">Изменить номер</button>
+                </div>
+              </div>
+              <div class="input_wrapper">
+                <div class="account_input no_bottom_margin">
+                  <div class="span_column"><span>Пароль</span>
+                    <input type="password" autocomplete="off" value="password"/>
+                  </div>
+                  <button class="blue">Изменить пароль</button>
+                </div>
+              </div>
+            </div>
+            <div class="profile_info">
+              <h3>Уведомления</h3>
+              <form action="/">
+                <label class="radio_wrapper" for="email">
+                  <input type="radio" name="email_notification" id="email"/>
+                  <div class="radio">
+                    <div class="fill"></div>
+                  </div><span>Получать уведомления на почту</span>
+                </label>
+                <label class="radio_wrapper" for="services">
+                  <input type="radio" name="new_services_notification" id="services"/>
+                  <div class="radio">
+                    <div class="fill"></div>
+                  </div><span>Получать уведомления о новых услугах</span>
+                </label>
+                <label class="radio_wrapper" for="newsletter">
+                  <input type="radio" name="newsletter_notification" id="newsletter"/>
+                  <div class="radio">
+                    <div class="fill"></div>
+                  </div><span>Информационная рассылка Brand Hub</span>
+                </label>
+              </form>
+            </div>
+            <div class="wrapper last_notification">
+              <form action="/">
+                <label class="radio_wrapper" for="personal_data">
+                  <input type="radio" name="email_notification" id="personal_data"/>
+                  <div class="radio">
+                    <div class="fill"></div>
+                  </div><span> <a class="underline" href="#">Согласие</a><span class="no_margin"> на хранение личных данных</span></span>
+                </label>
+              </form>
+              <div class="text_block"><a href="#">Пользовательское соглашение</a><a href="#">Вопросы и ответы</a></div>
             </div>
           </div>
         </div>
@@ -120,5 +196,15 @@
         </div>
       </footer>
     </div>
+    <section class="popup">
+      <div class="popup_container">
+        <button class="close_popup"><img src="./pic/close_popup.svg" alt=""/></button>
+        <h3>Загрузить изображение профиля</h3><img class="circle" src="./pic/user_pic_rectang.png" alt=""/>
+        <button class="close_popup image"><img src="./pic/cross.png" alt=""/></button>
+        <button class="blue">Загрузить</button>
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <script src="./js/main-dist.js"></script>
   </body>
 </html>

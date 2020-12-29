@@ -18,14 +18,15 @@ main
           a(href="../../build/results_tab.html") Результат работ
       .block.active
         .info
-          .stage_toggle
-            img(src="./pic/arrow.svg", alt="")
-            span Этап 1. Заполнение брифа
-          .status
-            p Текущий статус
-            span Бриф не согласован
+          .row
+            .stage_toggle
+              img(src="./pic/arrow.svg", alt="")
+              span Этап 1. Заполнение брифа
+            .status
+              p Текущий статус
+              span Бриф не согласован
           .refresh_date
-            .wrapper
+            .column
               p Последнее обновление
               span 3 мая 2020
             .svg_background
@@ -44,7 +45,7 @@ main
         .buttons
           a(href="../build/project_docs_approved.html")
             button.blue Редактировать бриф
-          button Задать вопрос
+          button.send_message Задать вопрос
       .block
         .info
           .stage_toggle

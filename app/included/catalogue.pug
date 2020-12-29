@@ -17,10 +17,12 @@ main
             li Фирменный стиль х2
           span <b>Цена: 150 000</b>
           span <b>Срок: 4 недели</b>
-          .buttons
+          .buttons.add_to_project.clicked
             button Добавить в текущий проект
-            button
-              a(href="../../build/new_services_invoice.html") Новый проект
+            a(href="../../build/new_services_invoice.html") 
+              button.no_underline Новый проект
+          .buttons
+            button Новый проект
         .service
           h4 Дизайн сайта
           p Стать заметнее в интернете: разработка дизайна сайта, рекламы и соц.сетей

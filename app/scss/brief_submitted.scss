@@ -8,30 +8,31 @@
         box-sizing: border-box;
         min-width: 260px;
         max-width: 260px;
-        // max-height: 461px;
+        min-height: 441px;
+        max-height: 441px;
         padding: 30px 0 44px 0;
         background: linear-gradient(134.17deg, #F9F9FB 4.98%, #F3F5F8 94.88%);
         box-shadow: -14.9774px -14.9774px 24.9624px rgba(255, 255, 255, 0.8), 12.4812px 12.4812px 24.9624px rgba(166, 180, 200, 0.7);
         border-radius: 10px;
-        &:not(:first-of-type) {
-            max-height: 461px;
-        }
-        &:last-of-type {
-            img {
-                margin-bottom: 40px;
-            }
-            button {
-                margin: 0;
-            }
-        }
-        &:last-of-type {
-            p {
-                margin: 0 0 55px 0;
-            }
-        }
-        &:not(:last-of-type) {
-            text-align: left;
-        }
+        // &:not(:first-of-type) {
+        //     max-height: 461px;
+        // }
+        // &:last-of-type {
+        //     img {
+        //         margin-bottom: 40px;
+        //     }
+        //     button {
+        //         margin: 0;
+        //     }
+        // }
+        // &:last-of-type {
+        //     p {
+        //         margin: 0 0 55px 0;
+        //     }
+        // }
+        // &:not(:last-of-type) {
+        //     text-align: left;
+        // }
         .hovered_block {
             display: none;
             position: absolute;
@@ -98,27 +99,27 @@
             min-height: 150px;
         }
         h3 {
-            font-size: 20px;
-            margin: 0 0 6px 0;
-            line-height: 27px;
-            font-weight: 500;
+            // font-size: 20px;
+            // margin: 0 0 6px 0;
+            // line-height: 27px;
+            // font-weight: 500;
         }
         span {
-            margin-left: 23px;
-            font-size: 12px;
-            line-height: 140%;
-            color: #959595;
+            // margin-left: 23px;
+            // font-size: 12px;
+            // line-height: 140%;
+            // color: #959595;
         }  
         p {
-            margin: 0 38px 47px 38px;
-            font-size: 12px;
-            line-height: 17px;
-            color: #3C3C3B;
+            // margin: 0 38px 47px 38px;
+            // font-size: 12px;
+            // line-height: 17px;
+            // color: #3C3C3B;
         }
         
         h4 {
-            margin: 35px 0 0 23px;
-            font-weight: 500;
+            // margin: 35px 0 0 23px;
+            // font-weight: 500;
         }
         .second_heading {
             margin: 112px 0 0 23px;

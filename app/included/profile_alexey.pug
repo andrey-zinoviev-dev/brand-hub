@@ -13,7 +13,7 @@ main
           .image_wrapper
             .pic
               img(src="./pic/profile_logo.svg", alt="")
-            button Загрузить
+            button.upload_image Загрузить
           .text_zone
             .text
               span Ваше имя
@@ -52,24 +52,24 @@ main
         h3 Уведомления
         form(action="/")
           label(for="email").radio_wrapper
-            input(type="radio", name="email_notification", id="email")
+            input(type="checkbox", name="email_notification", id="email")
             .radio
               .fill
             span Получать уведомления на почту
           label(for="services").radio_wrapper
-            input(type="radio", name="new_services_notification", id="services")
+            input(type="checkbox", name="new_services_notification", id="services")
             .radio
               .fill
             span Получать уведомления о новых услугах
           label(for="newsletter").radio_wrapper
-            input(type="radio", name="newsletter_notification" id="newsletter")
+            input(type="checkbox", name="newsletter_notification" id="newsletter")
             .radio
               .fill
             span Информационная рассылка Brand Hub
       .wrapper.last_notification
         form(action="/")
           label(for="personal_data").radio_wrapper
-            input(type="radio", name="email_notification", id="personal_data")
+            input(type="checkbox", name="email_notification", id="personal_data")
             .radio
               .fill
             span 

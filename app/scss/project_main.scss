@@ -69,16 +69,29 @@ main {
         margin: 0 auto;
         margin-right: 0;
         margin-bottom: 20px;
+        .info {
+          .row {
+            span {
+              width: 223px;
+            }
+          }
+        }
       }
       .info {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .row {
+          display: flex;
+          min-width: 450px;
+          align-items: center;
+        }
         .stage_toggle {
           display: flex;
           span {
-            min-width: 200px;
-            max-width: 270px;
+            // min-width: 200px;
+            // max-width: 270px;
+            width: 268px;
             color: #959595;
           }
         }
@@ -89,8 +102,11 @@ main {
             line-height: 140%;
           }
         }
-        .status {
-          margin-right: 45px;
+        // .status {
+        //   margin-right: 45px;
+        // }
+        .column {
+          margin-right: 25px;
         }
         .refresh_date {
           align-items: center;
@@ -378,7 +394,11 @@ main {
       .chat, .buttons {
         display: none;
       }
-    } 
+    }
+    .redirect {
+      color: black;
+      text-decoration: none;
+    }
   }
   .payment {
     display: flex;

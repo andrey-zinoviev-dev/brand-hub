@@ -83,20 +83,33 @@
                   </svg><span>Профиль</span></a></li>
             </ul>
           </nav>
-          <div class="wrapper wrapper_projects">
-            <div class="route"><span>Проекты</span><img src="./pic/arrow_right.svg" alt=""/><span>Проект # 000001</span><img src="./pic/arrow_right.svg" alt=""/><span>Документы</span></div>
-            <h2 class="docs_project">Проект № 000001</h2>
-            <div class="stages">
-              <button class="stage">Текущий этап</button><a href="../../build/brief_tag.html">Бриф
-                <button class="stage"></button></a>
-              <button class="stage"> </button>
-              <button class="stage clicked">Документы</button><a href="../../build/results_tab.html"> Результат работ
-                <button class="stage"></button></a>
+          <div class="wrapper wrapper_projects wrapper_profile">
+            <h2 class="docs_project">Профиль</h2>
+            <div class="stages profile">
+              <button class="stage clicked">Редактировать профиль</button>
+              <button class="stage"><a href="#">Информация о компании</a></button>
             </div>
-            <div class="wrapper">
-              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Бриф</span></div>
-              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Проектная документация</span></div>
-              <div class="folder"><img src="./pic/folder.svg" alt=""/><span>Результаты работ</span></div>
+            <div class="profile_info filled">
+              <h3>Информация профиля</h3>
+              <div class="profile_wrapper">
+                <div class="text_zone">
+                  <h4>Алексей Алехин</h4><span>Номер телефона:<br></span><span class="margin_bottom">+7 123 333 44 55</span><span>Текущий email:<br></span><span>sample@mail.ru</span>
+                </div>
+                <div class="image_wrapper"><img src="./pic/user_pic_rectang.png" alt=""/></div>
+              </div><a href="../../build/profile_alexey.html">
+                <button class="blue">Редактировать</button></a>
+            </div>
+            <div class="profile_info small_padding">
+              <h3>Изменение пароля</h3>
+              <div class="profile_wrapper"><span>Хотите изменить параметры входа в аккаунт?</span>
+                <button>Изменить пароль</button>
+              </div>
+            </div>
+            <div class="profile_info small_padding">
+              <h3>Удалить учетную запись</h3>
+              <div class="profile_wrapper"><span>Удаление учетной записи придете к удалению всего<br>ее содержимого и всех связанных с ней данных.</span>
+                <button>Изменить пароль</button>
+              </div>
             </div>
           </div>
         </div>
@@ -120,5 +133,17 @@
         </div>
       </footer>
     </div>
+    <section class="popup">
+      <div class="popup_container account">
+        <button class="close_popup"><img src="./pic/close_popup.svg" alt=""/></button>
+        <h3>Вы точно хотите удалить учетную запись?</h3>
+        <div class="buttons">
+          <button>Да</button>
+          <button class="blue">Нет</button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+    <script src="./js/main-dist.js"></script>
   </body>
 </html>
