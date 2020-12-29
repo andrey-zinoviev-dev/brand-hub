@@ -354,25 +354,6 @@ button.close img {
 .submitted_cards .card .second_heading {
   margin: 112px 0 0 23px;
 }
-.submitted_cards .card p {
-  margin: 16px 0px 140px 23px;
-}
-.submitted_cards .card button {
-  margin-left: 23px;
-  box-sizing: border-box;
-  padding: 16px 45px;
-  color: black;
-  text-transform: capitalize;
-  line-height: 22px;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  min-width: 214px;
-  background: linear-gradient(134.17deg, #EFF2F8 4.98%, #F3F5F8 17.62%, #FCFCFC 94.88%);
-  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.8), 7px 7px 14px rgba(144, 165, 194, 0.65);
-}
 .submitted_cards .second h4 {
   margin: 112px 0 0 23px;
 }
